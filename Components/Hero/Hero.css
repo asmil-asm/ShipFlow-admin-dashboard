@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.hero {
+  @apply relative w-full min-h-[300px] bg-cover bg-center bg-no-repeat flex items-center;
+}
+.hero::before {
+  content: "";
+  @apply absolute inset-0 bg-black/10 z-0;
+}
+.hero .text {
+  @apply relative z-10 px-6 max-w-2xl text-white;
+}
+.hero .text h1{
+  @apply text-[var(--color-secondary)] text-2xl font-bold
+}
+.hero .text h3{
+    @apply text-[var(--color-main)] text-3xl font-bold mt-3
+}
+.hero .text p{
+  @apply text-gray-600 mb-3
+}
